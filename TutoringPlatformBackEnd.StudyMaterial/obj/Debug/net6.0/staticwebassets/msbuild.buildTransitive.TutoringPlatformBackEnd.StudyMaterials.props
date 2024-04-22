@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TutoringPlatformBackEnd.StudyMaterials.props" />
+</Project>
