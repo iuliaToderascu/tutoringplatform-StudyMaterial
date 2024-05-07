@@ -18,3 +18,6 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Model
         public string Content { get; set; } // Binary content (video/pdf/image) so it will be of type byte[]
     }
 }
+
+
+
