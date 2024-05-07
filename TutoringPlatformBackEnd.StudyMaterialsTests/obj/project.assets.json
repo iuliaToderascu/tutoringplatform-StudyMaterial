@@ -3990,11 +3990,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\TutoringPlatformBackEnd.StudyMaterialsTests.csproj",
+      "projectUniqueName": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\TutoringPlatformBackEnd.StudyMaterialsTests.csproj",
       "projectName": "TutoringPlatformBackEnd.StudyMaterialsTests",
-      "projectPath": "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\TutoringPlatformBackEnd.StudyMaterialsTests.csproj",
+      "projectPath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\TutoringPlatformBackEnd.StudyMaterialsTests.csproj",
       "packagesPath": "C:\\Users\\toder\\.nuget\\packages\\",
-      "outputPath": "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\obj\\",
+      "outputPath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4016,8 +4016,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj": {
-              "projectPath": "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj"
+            "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj": {
+              "projectPath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj"
             }
           }
         }

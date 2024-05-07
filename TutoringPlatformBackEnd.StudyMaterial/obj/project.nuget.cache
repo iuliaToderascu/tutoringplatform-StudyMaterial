@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cqogvtiOT2SMPoZt6QUAOTQZ3JDagiFNYKRCEUaI4+ikR7yTL+HeKVzio+1+0PLJwXUIBQr66UVCpZmqhGHqew==",
+  "dgSpecHash": "1Uv/ZXRuR3Qf3H1jf1Ym1sdvbUXD7rZQaTD1k/x1fDLlmmOWcAXLpu1E91woYJT1JwLZs8gZDjJpzvdB0cHEiA==",
   "success": true,
-  "projectFilePath": "C:\\TutoringPlatformStudyMaterial\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj",
+  "projectFilePath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\toder\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
