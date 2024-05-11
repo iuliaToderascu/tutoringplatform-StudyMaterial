@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: C:\Users\toder\AppData\Local\Microsoft\WinGet\Links\kompose.exe convert
+    kompose.version: 1.31.2 (a92241f79)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: studymaterial-service
+  name: studymaterial-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: studymaterial-service
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: C:\Users\toder\AppData\Local\Microsoft\WinGet\Links\kompose.exe convert
+        kompose.version: 1.31.2 (a92241f79)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/tutoringproject-backend: "true"
+        io.kompose.service: studymaterial-service
+    spec:
+      containers:
+        - image: iuliaaaaa/tutoringplatform:studymaterial
+          name: studymatertial-service
+          ports:
+            - containerPort: 7071
+              hostPort: 7071
+              protocol: TCP
+          resources: {}
+      restartPolicy: Always
+status: {}
