@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1Uv/ZXRuR3Qf3H1jf1Ym1sdvbUXD7rZQaTD1k/x1fDLlmmOWcAXLpu1E91woYJT1JwLZs8gZDjJpzvdB0cHEiA==",
+  "dgSpecHash": "yTrfqk05hhqsTvKqfS2GpB6IrBWjPrtghX9rJBLUTJApo3Yjdetsol0J2N6gGCbw0/eMf8a2xwW3iFueDcuBBA==",
   "success": true,
   "projectFilePath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj",
   "expectedPackageFiles": [
@@ -23,9 +23,9 @@
     "C:\\Users\\toder\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
-    "C:\\Users\\toder\\.nuget\\packages\\mongodb.bson\\2.24.0\\mongodb.bson.2.24.0.nupkg.sha512",
-    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver\\2.24.0\\mongodb.driver.2.24.0.nupkg.sha512",
-    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.core\\2.24.0\\mongodb.driver.core.2.24.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver\\2.25.0\\mongodb.driver.2.25.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.core\\2.25.0\\mongodb.driver.core.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",

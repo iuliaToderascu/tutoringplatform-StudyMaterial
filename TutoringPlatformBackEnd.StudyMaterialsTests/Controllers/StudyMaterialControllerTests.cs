@@ -96,16 +96,21 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers.Tests
         {
             // Arrange
             var mockService = new Mock<IStudyMaterialService>();
-            var inputStudyMaterial = new StudyMaterialModel { Title = "Sample Material" };
+            var inputStudyMaterialUpload = new StudyMaterialController.StudyMaterialUploadModel
+            {
+                StudyMaterial = new StudyMaterialModel { Title = "Sample Material" },
+                CoverImage = null, 
+                Content = null 
+            };
             var expectedStudyMaterial = new StudyMaterialModel { Id = ObjectId.GenerateNewId(), Title = "test Material" };
 
-            mockService.Setup(service => service.CreateStudyMaterialAsync(inputStudyMaterial))
+            mockService.Setup(service => service.CreateStudyMaterialAsync(inputStudyMaterialUpload.StudyMaterial))
                        .ReturnsAsync(expectedStudyMaterial);
 
             var controller = new StudyMaterialController(mockService.Object);
 
             // Act
-            var result = await controller.CreateStudyMaterial(inputStudyMaterial);
+            var result = await controller.CreateStudyMaterial(inputStudyMaterialUpload);
 
             // Assert
             Assert.IsInstanceOfType(result.Result, typeof(CreatedAtActionResult));

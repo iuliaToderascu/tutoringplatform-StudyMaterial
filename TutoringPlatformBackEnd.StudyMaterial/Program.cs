@@ -23,13 +23,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Add the study material service
-builder.Services.AddScoped<IStudyMaterialService, StudyMaterialService>();
+builder.Services.AddSingleton<IStudyMaterialService>(sp =>
+{
+    var connectionString = "mongodb+srv://toderascuiulia:333222456aA11@iuliascluster.0fax4nf.mongodb.net/";
+    return new StudyMaterialService(connectionString);
+});
+
 builder.Services.AddSingleton<IStudyMaterialActor, StudyMaterialActor>();
 
-// Configure MongoDB connection
+// Configure MongoDB Cloud connection
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
-    var connectionString = "mongodb://localhost:27017";
+    var connectionString = "mongodb+srv://toderascuiulia:333222456aA11@iuliascluster.0fax4nf.mongodb.net/"; 
     return new MongoClient(connectionString);
 });
 

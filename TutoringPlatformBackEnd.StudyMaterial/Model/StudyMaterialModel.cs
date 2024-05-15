@@ -15,7 +15,10 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Model
         public string Title { get; set; }
         public string EducationLevel { get; set; }
         public List<string> Tags { get; set; }
-        public string Content { get; set; } // Binary content (video/pdf/image) so it will be of type byte[]
+
+        public byte[] Content { get; set; }
+
+        public byte[] CoverImage { get; set; }
     }
 }
 
