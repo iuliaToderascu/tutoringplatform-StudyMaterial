@@ -16,9 +16,8 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Model
         public string EducationLevel { get; set; }
         public List<string> Tags { get; set; }
 
-        public byte[] Content { get; set; }
-
-        public byte[] CoverImage { get; set; }
+        public string CoverImageURL { get; set; } // URL for the cover image
+        public string ContentURL { get; set; }     // URL for the content
     }
 }
 

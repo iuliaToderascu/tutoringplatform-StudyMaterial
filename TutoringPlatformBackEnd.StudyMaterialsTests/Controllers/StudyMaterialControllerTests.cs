@@ -90,31 +90,53 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers.Tests
             Assert.IsNotNull((result.Result as OkObjectResult)?.Value);
             CollectionAssert.AreEqual(new List<StudyMaterialModel>(), (result.Result as OkObjectResult)?.Value as List<StudyMaterialModel>);
         }
-
         [TestMethod]
         public async Task CreateStudyMaterial_ValidInput_ReturnsCreatedAtActionResult()
         {
             // Arrange
             var mockService = new Mock<IStudyMaterialService>();
-            var inputStudyMaterialUpload = new StudyMaterialController.StudyMaterialUploadModel
+            var inputStudyMaterial = new StudyMaterialModel
             {
-                StudyMaterial = new StudyMaterialModel { Title = "Sample Material" },
-                CoverImage = null, 
-                Content = null 
+                Title = "Sample Material",
+                EducationLevel = "High School",
+                Tags = new List<string> { "Math", "Science" },
+                ContentURL = "http://example.com/content.pdf",
+                CoverImageURL = "http://example.com/cover.jpg"
             };
-            var expectedStudyMaterial = new StudyMaterialModel { Id = ObjectId.GenerateNewId(), Title = "test Material" };
+            var expectedStudyMaterial = new StudyMaterialModel
+            {
+                Id = ObjectId.GenerateNewId(), // Ensure the expected study material has an Id.
+                Title = "Sample Material",
+                EducationLevel = "High School",
+                Tags = new List<string> { "Math", "Science" },
+                ContentURL = "http://example.com/content.pdf",
+                CoverImageURL = "http://example.com/cover.jpg"
+            };
 
-            mockService.Setup(service => service.CreateStudyMaterialAsync(inputStudyMaterialUpload.StudyMaterial))
-                       .ReturnsAsync(expectedStudyMaterial);
+            mockService.Setup(service => service.CreateStudyMaterialAsync(It.IsAny<StudyMaterialModel>()))
+                       .ReturnsAsync((StudyMaterialModel sm) =>
+                       {
+                           sm.Id = expectedStudyMaterial.Id; // Simulate setting the Id during creation.
+                           return sm;
+                       });
 
             var controller = new StudyMaterialController(mockService.Object);
 
             // Act
-            var result = await controller.CreateStudyMaterial(inputStudyMaterialUpload);
+            var result = await controller.CreateStudyMaterial(inputStudyMaterial);
 
             // Assert
-            Assert.IsInstanceOfType(result.Result, typeof(CreatedAtActionResult));
-            Assert.AreEqual(nameof(StudyMaterialController.GetStudyMaterialById), (result.Result as CreatedAtActionResult)?.ActionName);
+            var createdAtActionResult = result.Result as CreatedAtActionResult;
+            Assert.IsNotNull(createdAtActionResult);
+            Assert.AreEqual(nameof(StudyMaterialController.GetStudyMaterialById), createdAtActionResult.ActionName);
+            var returnedStudyMaterial = createdAtActionResult.Value as StudyMaterialModel;
+            Assert.IsNotNull(returnedStudyMaterial);
+            Assert.AreEqual(expectedStudyMaterial.Id, returnedStudyMaterial.Id);
+            Assert.AreEqual(expectedStudyMaterial.Title, returnedStudyMaterial.Title);
+            Assert.AreEqual(expectedStudyMaterial.EducationLevel, returnedStudyMaterial.EducationLevel);
+            CollectionAssert.AreEqual(expectedStudyMaterial.Tags, returnedStudyMaterial.Tags); // Compare collections by contents
+            Assert.AreEqual(expectedStudyMaterial.ContentURL, returnedStudyMaterial.ContentURL);
+            Assert.AreEqual(expectedStudyMaterial.CoverImageURL, returnedStudyMaterial.CoverImageURL);
         }
 
         [TestMethod]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DghaQ1rltdKvb83svCSdK5hsx48K7LVzuRbSKaI9BVYiqoi4UDnqtXtc5iMnH2K8d8QgSTJVpGluKd02K/HK5g==",
+  "dgSpecHash": "4Q9i+u4kcga4L9NnWNK4e0FmPSp04r3gr0mNWt7roghTaIvz42CpNVXiJjGiWzG3impAPZCuRu6atTm3kU7tIg==",
   "success": true,
   "projectFilePath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterialsTests\\TutoringPlatformBackEnd.StudyMaterialsTests.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver\\2.25.0\\mongodb.driver.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.core\\2.25.0\\mongodb.driver.core.2.25.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.gridfs\\2.25.0\\mongodb.driver.gridfs.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mstest.testadapter\\2.2.10\\mstest.testadapter.2.2.10.nupkg.sha512",

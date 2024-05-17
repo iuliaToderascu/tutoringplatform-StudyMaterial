@@ -108,3 +108,4 @@ C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterial\ob
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterial\obj\Debug\net6.0\TutoringPlatformBackEnd.StudyMaterial.pdb
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterial\obj\Debug\net6.0\TutoringPlatformBackEnd.StudyMaterial.genruntimeconfig.cache
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterial\obj\Debug\net6.0\ref\TutoringPlatformBackEnd.StudyMaterial.dll
+C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterial\bin\Debug\net6.0\MongoDB.Driver.GridFS.dll

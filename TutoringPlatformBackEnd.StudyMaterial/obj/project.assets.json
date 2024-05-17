@@ -369,6 +369,24 @@
           }
         }
       },
+      "MongoDB.Driver.GridFS/2.25.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Bson": "2.25.0",
+          "MongoDB.Driver": "2.25.0",
+          "MongoDB.Driver.Core": "2.25.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MongoDB.Driver.GridFS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.GridFS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MongoDB.Libmongocrypt/1.8.2": {
         "type": "package",
         "compile": {
@@ -1210,6 +1228,25 @@
         "packageIcon.png"
       ]
     },
+    "MongoDB.Driver.GridFS/2.25.0": {
+      "sha512": "RFvBxqr0H16pzLfuPHsyyVvRfr2nR/GjnBMOcfkxDwwlEipR2l9HI/7OFSaKs4wED+YjwIsd4GJ+eb2bLYkQxA==",
+      "type": "package",
+      "path": "mongodb.driver.gridfs/2.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net472/MongoDB.Driver.GridFS.dll",
+        "lib/net472/MongoDB.Driver.GridFS.xml",
+        "lib/netstandard2.0/MongoDB.Driver.GridFS.dll",
+        "lib/netstandard2.0/MongoDB.Driver.GridFS.xml",
+        "lib/netstandard2.1/MongoDB.Driver.GridFS.dll",
+        "lib/netstandard2.1/MongoDB.Driver.GridFS.xml",
+        "mongodb.driver.gridfs.2.25.0.nupkg.sha512",
+        "mongodb.driver.gridfs.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "MongoDB.Libmongocrypt/1.8.2": {
       "sha512": "z/8JCULSHM1+mzkau0ivIkU9kIn8JEFFSkmYTSaMaWMMHt96JjUtMKuXxeGNGSnHZ5290ZPKIlQfjoWFk2sKog==",
       "type": "package",
@@ -1559,6 +1596,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.15",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.18.1",
       "MongoDB.Driver >= 2.25.0",
+      "MongoDB.Driver.GridFS >= 2.25.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1617,6 +1655,10 @@
             "version": "[1.18.1, )"
           },
           "MongoDB.Driver": {
+            "target": "Package",
+            "version": "[2.25.0, )"
+          },
+          "MongoDB.Driver.GridFS": {
             "target": "Package",
             "version": "[2.25.0, )"
           },

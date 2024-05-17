@@ -2,6 +2,9 @@
 using TutoringPlatformBackEnd.StudyMaterial.Services;
 using TutoringPlatformBackEnd.StudyMaterial.Model;
 using TutoringPlatformBackEnd.StudyMaterial.Actor;
+using MongoDB.Driver.GridFS;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
 {
@@ -42,26 +45,14 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<StudyMaterialModel>> CreateStudyMaterial([FromForm] StudyMaterialUploadModel studyMaterialUpload)
+        public async Task<ActionResult<StudyMaterialModel>> CreateStudyMaterial([FromBody] StudyMaterialModel studyMaterial)
         {
-            if (studyMaterialUpload == null || studyMaterialUpload.StudyMaterial == null)
+            if (studyMaterial == null)
             {
                 return BadRequest("Invalid request payload");
             }
 
-            // Process cover image upload
-            if (studyMaterialUpload.CoverImage != null && studyMaterialUpload.CoverImage.Length > 0)
-            {
-                studyMaterialUpload.StudyMaterial.CoverImage = await GetFileBytes(studyMaterialUpload.CoverImage);
-            }
-
-            // Process content upload
-            if (studyMaterialUpload.Content != null && studyMaterialUpload.Content.Length > 0)
-            {
-                studyMaterialUpload.StudyMaterial.Content = await GetFileBytes(studyMaterialUpload.Content);
-            }
-
-            var createdStudyMaterial = await _studyMaterialService.CreateStudyMaterialAsync(studyMaterialUpload.StudyMaterial);
+            var createdStudyMaterial = await _studyMaterialService.CreateStudyMaterialAsync(studyMaterial);
             return CreatedAtAction(nameof(GetStudyMaterialById), new { id = createdStudyMaterial.Id }, createdStudyMaterial);
         }
 
@@ -91,22 +82,6 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
             {
                 return StatusCode(500, $"An error occurred while deleting study material: {ex.Message}");
             }
-        }
-
-        private async Task<byte[]> GetFileBytes(IFormFile file)
-        {
-            using (var memoryStream = new MemoryStream())
-            {
-                await file.CopyToAsync(memoryStream);
-                return memoryStream.ToArray();
-            }
-        }
-
-        public class StudyMaterialUploadModel
-        {
-            public StudyMaterialModel StudyMaterial { get; set; }
-            public IFormFile CoverImage { get; set; }
-            public IFormFile Content { get; set; }
         }
     }
 }

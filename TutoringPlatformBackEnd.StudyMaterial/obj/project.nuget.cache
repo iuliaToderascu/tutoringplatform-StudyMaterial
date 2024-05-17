@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yTrfqk05hhqsTvKqfS2GpB6IrBWjPrtghX9rJBLUTJApo3Yjdetsol0J2N6gGCbw0/eMf8a2xwW3iFueDcuBBA==",
+  "dgSpecHash": "N4zrpwGjS0NKwuM64WjqTGXOxNQg2aqjbZ3HIJLVTxF1prZc12PxVXbLzOdoaAuWkVpXK6/aO3ucxV4AK90zBw==",
   "success": true,
   "projectFilePath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver\\2.25.0\\mongodb.driver.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.core\\2.25.0\\mongodb.driver.core.2.25.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\mongodb.driver.gridfs\\2.25.0\\mongodb.driver.gridfs.2.25.0.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",

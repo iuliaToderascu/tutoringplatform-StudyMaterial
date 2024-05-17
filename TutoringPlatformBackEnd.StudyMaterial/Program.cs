@@ -38,6 +38,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     return new MongoClient(connectionString);
 });
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
