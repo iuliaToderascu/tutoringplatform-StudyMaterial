@@ -32,5 +32,8 @@ spec:
               hostPort: 7071
               protocol: TCP
           resources: {}
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: regcred
       restartPolicy: Always
 status: {}
