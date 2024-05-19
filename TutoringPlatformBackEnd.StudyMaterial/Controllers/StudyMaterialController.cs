@@ -5,6 +5,9 @@ using TutoringPlatformBackEnd.StudyMaterial.Actor;
 using MongoDB.Driver.GridFS;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using MongoDB.Bson.IO;
+using Newtonsoft.Json;
+using System.Xml;
 
 namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
 {
@@ -51,6 +54,9 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
             {
                 return BadRequest("Invalid request payload");
             }
+
+            // Log the request body
+            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(studyMaterial, Newtonsoft.Json.Formatting.Indented));
 
             var createdStudyMaterial = await _studyMaterialService.CreateStudyMaterialAsync(studyMaterial);
             return CreatedAtAction(nameof(GetStudyMaterialById), new { id = createdStudyMaterial.Id }, createdStudyMaterial);

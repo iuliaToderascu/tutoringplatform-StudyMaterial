@@ -2,9 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using MongoDB.Driver.Core.Configuration;
 using TutoringPlatformBackEnd.StudyMaterial.Model;
-using TutoringPlatformBackEnd.StudyMaterial.Services;
 
 namespace TutoringPlatformBackEnd.StudyMaterial.Services
 {
