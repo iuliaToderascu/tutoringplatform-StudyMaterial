@@ -89,5 +89,12 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Controllers
                 return StatusCode(500, $"An error occurred while deleting study material: {ex.Message}");
             }
         }
+
+        [HttpGet("search/{keyword}")]
+        public async Task<ActionResult<List<StudyMaterialModel>>> SearchStudyMaterials(string keyword)
+        {
+            var studyMaterials = await _studyMaterialService.SearchStudyMaterialsAsync(keyword);
+            return Ok(studyMaterials);
+        }
     }
 }

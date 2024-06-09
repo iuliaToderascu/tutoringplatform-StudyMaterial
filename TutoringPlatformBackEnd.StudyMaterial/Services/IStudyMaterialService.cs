@@ -10,5 +10,6 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Services
         Task<StudyMaterialModel> CreateStudyMaterialAsync(StudyMaterialModel studyMaterial);
         Task UpdateStudyMaterialAsync(string id, StudyMaterialModel studyMaterial);
         Task DeleteStudyMaterialAsync(string id);
+        Task<List<StudyMaterialModel>> SearchStudyMaterialsAsync(string keyword);
     }
 }

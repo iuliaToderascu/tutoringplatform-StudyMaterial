@@ -49,5 +49,16 @@ namespace TutoringPlatformBackEnd.StudyMaterial.Services
             var objectId = ObjectId.Parse(id);
             await _studyMaterialCollection.DeleteOneAsync(s => s.Id == objectId);
         }
+
+        public async Task<List<StudyMaterialModel>> SearchStudyMaterialsAsync(string keyword)
+        {
+            var filter = Builders<StudyMaterialModel>.Filter.Or(
+                Builders<StudyMaterialModel>.Filter.Regex("Title", new BsonRegularExpression(keyword, "i")),
+                Builders<StudyMaterialModel>.Filter.Regex("Tags", new BsonRegularExpression(keyword, "i")),
+                Builders<StudyMaterialModel>.Filter.Regex("Description", new BsonRegularExpression(keyword, "i"))
+            );
+
+            return await _studyMaterialCollection.Find(filter).ToListAsync();
+        }
     }
 }
