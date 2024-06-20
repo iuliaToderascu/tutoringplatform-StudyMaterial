@@ -271,3 +271,4 @@ C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterialsTe
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterialsTests\obj\Debug\net6.0\TutoringPlatformBackEnd.StudyMaterialsTests.genruntimeconfig.cache
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterialsTests\obj\Debug\net6.0\ref\TutoringPlatformBackEnd.StudyMaterialsTests.dll
 C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterialsTests\bin\Debug\net6.0\MongoDB.Driver.GridFS.dll
+C:\TutoringPlatformStudyMaterialService\TutoringPlatformBackEnd.StudyMaterialsTests\bin\Debug\net6.0\stylecop.json

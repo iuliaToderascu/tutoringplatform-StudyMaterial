@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6N6pTyrWQ4NzCYF9u+u3XO1lTBvYn16HBEn0upwR3MHNZ9ResX/fWAvtydYNRC9lrVxx0e3CzU6qUUZTz8V0Fg==",
+  "dgSpecHash": "ZBWnygFjeqJpAUkYstRso7DVeZgjX40IMjZ+w7Q3YKP5IY0TBaR6FdOGeF6xkBTKFoUK8bBzK1TEQ1kg/WEb+Q==",
   "success": true,
   "projectFilePath": "C:\\TutoringPlatformStudyMaterialService\\TutoringPlatformBackEnd.StudyMaterial\\TutoringPlatformBackEnd.StudyMaterial.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\toder\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\toder\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\toder\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
